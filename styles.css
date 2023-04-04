@@ -1,0 +1,200 @@
+/*GENERAL*/
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: rgb(26, 26, 26);
+  }
+
+  *{
+    font-family: Prompt;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    }
+
+  body{
+    background-color: var(--bg-card);
+    display: flex;
+    height: 100zh;
+  }
+
+  /*TOP TEXT*/
+  .share{
+    z-index: 100;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    margin-left: 19.5rem;
+  }
+
+  /*CARD*/
+
+  .card{
+    background-color: var(--bg-card);
+    width: 19rem; 
+    height: 31rem;
+    border-radius: 2.5rem;
+    margin-left: 1.49rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+
+  .card-background{
+    background-color: rgb(31, 34, 43);
+    border-radius: 2.5rem;
+    width: 22rem;
+    height: 33rem;
+    margin-top: 3rem;
+    margin-left: 18rem;
+  }
+
+  /*INFORMATION BOX*/
+
+  .infos{
+    background-color: rgba(26, 26, 26, 0.9);
+    width: 11rem;
+    height: 11rem;
+    border-radius: 2rem;  
+    display:flex;
+    position: absolute;
+    flex-direction: row;
+    margin-top: -9rem;
+    margin-left: 0.1rem;
+    z-index: 100;
+  }
+
+  .icons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1.7rem;
+  }
+
+  .icons img{
+    margin-bottom: 0.6rem;
+  }
+  
+  .desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.7rem;
+    margin-left: 0.5rem;
+  }
+
+  /*PROFILE PIC*/
+  .user-photo{
+    border-radius: 10rem;
+    display: absolute;
+    width: 17rem;
+    height: 17rem;
+    z-index: 99;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    border: solid var(--img-profile) 0.3rem;
+  }
+
+
+  /*TOP AND BOTTOM LOGOS*/
+
+  .top-logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    border-color: var(--text);
+    border-style: solid;
+    border-width: 0.1rem; 
+    background-color: var(--bg-card);
+    object-fit: contain;
+  }
+
+  .bottom-logo{
+    width: 1.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .bottom-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 9rem;
+    margin-top: 4rem;
+  }
+
+  .top-div{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .name{
+    margin-left: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: large;
+   }
+
+
+  /*CHANGE BACKGROUND PHOTO*/
+
+  .btt-background{
+    background-color: var(--bg);
+    border: var(--border-button) solid 0.1rem;
+    border-radius: 1rem;
+    width: 16.8rem;
+    height: 3.2rem;
+    margin-left: 0.1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .btt-background:hover{
+    cursor: pointer;
+  }
+
+  .btt-background:focus{
+    outline: none;
+  }
+
+  .btt-background:active{
+    transform: translateY(-10px);
+    transition: 1s;
+  }
+
+  .button-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 15rem;
+  }
+
+  .cost{
+    font-size: 1.5rem;
+  }
+
+  /*USER INPUT*/
+  .activate-input{
+    background-color: var(--bg);
+    border: var(--border-button) solid 0.1rem;
+    border-radius: 1rem;
+    width: 16.8rem;
+    height: 3.2rem;
+    margin-left: 0.1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .activate-input:hover{
+    cursor: pointer;
+  }
+
+  .activate-input:focus{
+    outline: none;
+  }
+
+  .activate-input:active{
+    transform: translateY(-10px);
+    transition: 1s;
+  }
