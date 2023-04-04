@@ -18,7 +18,7 @@
   body{
     background-color: var(--bg-card);
     display: flex;
-    height: 100zh;
+    height: 100vh;
   }
 
   /*TOP TEXT*/
@@ -27,7 +27,7 @@
     font-size: 1.3rem;
     margin-top: 0.5rem;
     position: absolute;
-    margin-left: 19.5rem;
+    margin-left: 19.8rem;
   }
 
   /*CARD*/
@@ -49,6 +49,10 @@
     height: 33rem;
     margin-top: 3rem;
     margin-left: 18rem;
+  }
+
+  .card-background:hover{
+    cursor: pointer;
   }
 
   /*INFORMATION BOX*/
@@ -195,6 +199,6 @@
   }
 
   .activate-input:active{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: 1s;
   }

@@ -1,11 +1,9 @@
 'strict mode'
 /*API SEARCH*/
-let url_standard = "https://api.github.com/users/poissonfou"
-
 async function getInfo(url_par){
     try{
     if(url_par == "https://api.github.com/users/poissonfou"){
-        url = "https://api.github.com/users/poissonfou"
+        url = url_par
     }
     else{
         url = `https://api.github.com/users/${url_par}`
@@ -46,8 +44,10 @@ async function getInfo(url_par){
     } 
 }
 
+let url_standard = "https://api.github.com/users/poissonfou"
 getInfo(url_standard);
 
+/*GET USER INPUT*/
 function userPrompt(){
     const value = prompt("Entre o seu usuário");
 
@@ -60,7 +60,7 @@ function userPrompt(){
 }
 
 const enter_user = document.querySelector(`.activate-input`)
-enter_user.addEventListener('click',userPrompt);
+enter_user.addEventListener('click', userPrompt);
 
 /*CHANGE COLOR FUNCTION */
 function changeColor(){
